@@ -1,0 +1,42 @@
+/* AtmList.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.atm-list {
+    list-style: none;
+    padding: 0;
+}
+
+.atm-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.atm-item a {
+    text-decoration: none;
+    color: #007bff; /* Синий цвет ссылок */
+    font-weight: 500;
+}
+
+.atm-item a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.atm-item:last-child {
+    border-bottom: none;
+}

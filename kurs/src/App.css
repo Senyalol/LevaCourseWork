@@ -1,0 +1,80 @@
+/* App.css */
+.App {
+  font-family: 'Roboto', sans-serif; /* Используем современный шрифт */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('./back.png'); /* Укажите здесь путь к вашему изображению */
+  background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь фон */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Не повторяем изображение */
+}
+
+.App > * {
+  margin: 20px;
+}
+
+.container {
+  max-width: 960px; /* Увеличим максимальную ширину */
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для контейнера */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для кнопок */
+button {
+  background-color: #007bff; /* Голубой цвет */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+button.add-button { /* Добавим отдельный класс для кнопки "Добавить" */
+  margin-bottom: 20px;
+  display: block; /* Растягиваем кнопку на всю ширину */
+  width: 100%;
+}
+
+.atm-list {
+  list-style: none;
+  padding: 0;
+}
+
+.atm-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atm-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500; /* Более bold текст */
+}
+
+.atm-item a:hover {
+  text-decoration: underline;
+}
+
+.atm-item:last-child {
+  border-bottom: none;
+}
+
+/* Респонсивность */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}

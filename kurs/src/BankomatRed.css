@@ -1,0 +1,60 @@
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Увеличим радиус для более мягкого вида */
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Добавим тень */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение полей */
+}
+
+form div {
+    margin-bottom: 15px; /* Отступ между полями формы */
+}
+
+label {
+    margin-bottom: 5px; /* Отступ под меткой */
+    font-weight: bold; /* Жирный текст для меток */
+}
+
+input, textarea {
+    padding: 10px; /* Отступы внутри полей */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Закругленные углы */
+    width: 100%; /* Полная ширина */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+button {
+    background-color: #008337; /* Красный цвет для удаления */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+button:hover {
+    background-color: #c82333; /* Более темный красный при наведении */
+}
+
+/*  Добавим стили для улучшения отображения на разных экранах */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
